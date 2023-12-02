@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import { useState } from "react";
+import Doctor from '../images/doctor.jpg'
+import '../css/styles.css'
 
-const Card = ({ name, username, id }) => {
+const Card = ({ name, username, id}) => {
   
   const[errorMessage, setErrorMessage] = useState('');
 
@@ -30,9 +32,10 @@ const Card = ({ name, username, id }) => {
     <div className="card">
         {/* En cada card deberan mostrar en name - username y el id */}
         <Link to={`/details/${id}`}>
-          <h2>{name}</h2>
+          <h3>{name}</h3>
           <h3>{username}</h3>
           <p>ID: {id}</p>
+          <img src={Doctor} alt="Foto odontologo" className="photo" />
         </Link>
 
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}

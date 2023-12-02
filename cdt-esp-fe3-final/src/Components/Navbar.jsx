@@ -10,9 +10,9 @@ const Navbar = () => {
   const { state, dispatch } = useAppContext();
 
   const routes = [
-    { path: '/home', name: 'Home' },
-    { path: '/favs', name: 'Favs' },
-    { path: '/contacto', name: 'Contacts' },
+    { path: '/home', name: 'Inicio' },
+    { path: '/favs', name: 'Favoritos' },
+    { path: '/contact', name: 'Contactos' },
   ];
 
   const toggleTheme = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className={`nav ${state.theme}`}>
       <ul>
         {routes.map((route, index) => (
-          <li key={index}>
+          <li key={index} className='menu'>
             <Link to={route.path}>{route.name}</Link>
           </li>
         ))}
