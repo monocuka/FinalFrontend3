@@ -9,6 +9,8 @@ import '../css/styles.css'
 const Footer = () => {
   return (
     <footer className='footer'>
+      <div className='copy1'><p>Powered by</p></div>
+      <div className='footer1'>
       <div className='SocialN'>
         <a href="facebook.com" target='_blank'>
           <img src={Facebook} alt="logo-facebook" className='RS' />
@@ -19,14 +21,15 @@ const Footer = () => {
         <a href="tiktok.com" target='_blank'>
           <img src={Tiktok} alt="logo-tiktok" className='RS' />
         </a>
-        <a href="whatsapp.com" target='_blank'>
+        <a href=".com" target='_blank'>
           <img src={Whatsapp} alt="logo-whastapp" className='RS' />
         </a>
-      </div>
-      <div className='copy'>
-        <p>Powered by</p>
+        </div>
+        <div className='copy'>
         <img src={DHlogo} alt='DH-logo' />
         </div>
+      </div>
+      
     </footer>
   )
 }

@@ -2,13 +2,15 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import { useState } from "react";
 import Doctor from '../images/doctor.jpg'
+import ButtonFav from "./BtnFavs";
 import '../css/styles.css'
+
 
 const Card = ({ name, username, id}) => {
   
   const[errorMessage, setErrorMessage] = useState('');
 
-  const addFav = ()=>{
+  const addFav = () => {
     // Aqui iria la logica para agregar la Card en el localStorage
     const storedFav =localStorage.getItem('favorites');
 
@@ -40,7 +42,7 @@ const Card = ({ name, username, id}) => {
 
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
-        <button onClick={addFav} className="favButton">Add fav</button>
+        <ButtonFav dentist={{id, name}} />
 
         {errorMessage && <p className="errorM">{errorMessage}</p>}
     </div>

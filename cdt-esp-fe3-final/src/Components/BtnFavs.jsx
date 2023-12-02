@@ -1,9 +1,10 @@
 
 
-import React from "react";
+
 import React, { useState, useEffect } from 'react';
-import { useAppContext } from '../../context/AppContext';
-import { ADD_FAVORITES, REMOVE_FAVORITES } from '../../hooks/useReducerHook';
+import { useAppContext } from '../context/AppContext'
+import { ADD_FAVORITES, REMOVE_FAVORITES } from '../Components/utils/useReducerHook'
+import Card from "./Card";
 import'../css/styles.css';
 
 
@@ -30,3 +31,5 @@ const ButtonFav = ({ dentist: { id, name } }) => {
         </button>
         );
 };
+
+export default ButtonFav;

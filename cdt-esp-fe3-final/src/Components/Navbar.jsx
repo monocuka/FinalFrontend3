@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { useAppContext } from '../context/AppContext';
 import { TOGGLE_THEME } from './utils/useReducerHook';
 
+
 const Navbar = () => {
   const { state, dispatch } = useAppContext();
 
@@ -21,6 +22,8 @@ const Navbar = () => {
 
   return (
     <nav className={`nav ${state.theme}`}>
+        <p className='namelog'>DH Odonto</p>
+      <div className='nav2'>
       <ul>
         {routes.map((route, index) => (
           <li key={index} className='menu'>
@@ -31,6 +34,7 @@ const Navbar = () => {
       <button className='BtnLD' onClick={toggleTheme}>
         <img src={state.theme === 'light' ? Light : Dark} alt='Theme Icon' />
       </button>
+      </div>
     </nav>
   );
 };

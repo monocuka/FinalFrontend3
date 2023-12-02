@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+nav{
+    width: 100%;
+    display: flex;
+    background-color: rgb(78, 78, 78);
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1%;
+}
+nav > p{
+    width: 50%;
+    display: flex;
+    padding-left: 2%;
+}
+.nav2{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    width: 50%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+}
+ul li a {
+    color:rgb(36, 36, 36);
+    text-decoration: none;
+}
+ul li a:hover{
+    color:rgb(36, 36, 36);
+}
+.menu{
+    padding: 3%;
+    color: black;
+}
+h1{
+    padding-top: 1.5%;
+}
+h1, h2, h3, h4, p{
+    color: rgb(16, 15, 15);
+}
+.card-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+.card{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(112, 112, 112, 0.418);
+    margin-top: 2%;
+    border-radius: 15px;
+}
+
+.BtnLD > img{
+    width: 10px;
+}
+.RS{
+    width: 30px;
+}
+.photo{
+    width: 80%;
+}
+footer{
+    width: 100%;
+}
+.copy1{
+    background-color: rgb(140, 1, 28);
+}
+.copy > img{
+    width: 40%;
+}
+.copy{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.SocialN{
+    width: 50%;
+    display: flex;
+    padding: 2%;
+    justify-content:space-evenly ;
+}
+
+.footer1{
+    display: flex;
+}
+.Form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form {
+    display: flex;
+    flex-direction: column; 
+}
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    }
+    
+p {
+    margin-bottom: 16px;
+    color: rgb(20, 20, 20); /* Color del mensaje de agradecimiento */
+}
+    
+.BtnSend {
+    text-align: center;
+}
+    
+button {
+    padding: 10px 20px;
+    background-color: #3e3e3e; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+    
+button:hover {
+    background-color: #3e3e3e; /* Color del botón Enviar al pasar el ratón por encima */
+}
+.form2, .formx{
+    display: flex;
+    flex-direction: column;
+}
